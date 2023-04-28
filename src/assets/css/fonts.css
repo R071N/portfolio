@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Shanghai';
+  src: url(../fonts/shanghai.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'BlenderPro';
+  src: url(../fonts/BlenderPro-Book.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'BlenderPro';
+  src: url(../fonts/BlenderPro-Bold.woff2) format('woff2');
+  font-weight: 600;
+}
