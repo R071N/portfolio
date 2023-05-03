@@ -1,23 +1,25 @@
 <template>
-  <header class="header">
-    <div class="container">
-      <nav class="nav">
-        <div><router-link :to="{ name: 'home' }" class="logotype">ROLIN</router-link></div>
-        <ul class="nav__list">
-          <li><router-link :to="{ name: 'about' }" class="nav__item">О себе</router-link></li>
-          <li><router-link :to="{ name: 'skills' }" class="nav__item">Навыки</router-link></li>
-          <li><router-link :to="{ name: 'works' }" class="nav__item">Примеры работ</router-link></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <router-view />
-  <footer class="footer">
-  </footer>
+  <TheHeader />
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
+  <TheFooter />
 </template>
+
+<script>
+import TheHeader from '@/components/TheHeader.vue';
+import TheFooter from '@/components/TheFooter.vue';
+
+export default {
+  components: { TheHeader, TheFooter }
+}
+</script>
 
 <style lang="scss">
 @import "./assets/css/normalize.css";
 @import "./assets/css/fonts.css";
 @import "./assets/css/style.scss";
 </style>
+

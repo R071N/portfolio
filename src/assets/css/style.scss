@@ -19,13 +19,13 @@ img {
 
 body {
     font-family: 'BlenderPro', 'Shanghai', sans-serif;
-    background: url(./assets/img/back.webp) no-repeat;
+    background: url(img/back.webp) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #app {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 100px;
@@ -106,6 +106,17 @@ body {
     }
 }
 
+.subtitle {
+    margin: 0;
+    opacity: 0;
+    font-size: 40px;
+    transform: translateX(-100%);
+    animation: slide-in-left 0.5s ease-in-out forwards;
+
+    &__education {
+        margin: 0;
+    }
+}
 
 @keyframes slide-in-left {
     from {
@@ -144,7 +155,7 @@ body {
 }
 
 .iphoto {
-    background: url(./assets/img/i.webp);
+    background: url(img/i.webp);
     width: 400px;
     height: 600px;
     opacity: 0;
@@ -168,6 +179,178 @@ body {
     }
 }
 
+//About
+.about {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+    &__block1 {
+        grid-row: span 3;
+    }
+
+    &__text {
+        padding: 20px;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: #000000;
+        border-radius: 3%;
+    }
+
+    &__block {
+        &__education {
+            padding: 20px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: #000000;
+            border-radius: 3%;
+        }
+
+        &__education div {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+//Skills
+.skills {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 100;
+    transition: 2s;
+
+    &__logo {
+        opacity: 0;
+        position: absolute;
+        will-change: filter;
+        transition: filter 300ms;
+
+        &__img2 {
+            width: 150px;
+            height: 100px;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        &__img1 {
+            width: 100px;
+            height: 100px;
+            animation: float 5s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        &__img {
+            width: 150px;
+            height: 150px;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        &0 {
+            top: 40%;
+            left: 45%;
+            animation: logo-opaciti 3s 0.4s ease forwards;
+            
+        }
+
+        &1 {
+            top: 26%;
+            left: 35%;
+            animation: logo-opaciti 3s 0.9s ease forwards;
+        }
+
+        &2 {
+            top: 51%;
+            left: 60%;
+            animation: logo-opaciti 3s 0.9s ease forwards;
+        }
+
+        &3 {
+            top: 16%;
+            left: 58%;
+            animation: logo-opaciti 3s 1.3s ease forwards;
+        }
+
+        &4 {
+            top: 57%;
+            left: 38%;
+            animation: logo-opaciti 3s 1.3s ease forwards;
+        }
+
+        &5 {
+            top: 64%;
+            right: 39%;
+            animation: logo-opaciti 3s 1.5s ease forwards;
+        }
+
+        &6 {
+            top: 41%;
+            left: 31%;
+            animation: logo-opaciti 3s 1.5s ease forwards;
+        }
+
+        &7 {
+            top: 24%;
+            right: 43%;
+            animation: logo-opaciti 3s 2s ease forwards;
+        }
+
+        &8 {
+            top: 33%;
+            right: 24%;
+            animation: logo-opaciti 3s 2s ease forwards;
+        }
+
+        &9 {
+            bottom: 31%;
+            left: 20%;
+            animation: logo-opaciti 3s 2s ease forwards;
+        }
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes logo-opaciti {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+//Footer
 .footer {
     background-color: rgba($color: #000000, $alpha: 0.7);
+}
+
+.fade-enter-active {
+    transition: all 0.5s ease;
+}
+
+.fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    transform: translateX(-50px);
+    opacity: 0;
 }

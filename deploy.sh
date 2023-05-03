@@ -13,6 +13,6 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f https://github.com/R071N/portfolio.git master:gh-pages
+git push -f https://github.com/R071N/portfolio-vue.git master:gh-pages
 
 cd -

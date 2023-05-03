@@ -1,0 +1,23 @@
+.blue:hover {
+    filter: drop-shadow(0 0 0.5em #006ce7e3);
+}
+
+.blue-light:hover {
+    filter: drop-shadow(0 0 0.5em #00adcc);
+}
+
+.green:hover {
+    filter: drop-shadow(0 0 0.5em #009c34e5);
+}
+
+.orange:hover {
+    filter: drop-shadow(0 0 0.5em #e68302f6);
+}
+
+.yellow:hover {
+    filter: drop-shadow(0 0 0.5em #d9ff00aa);
+}
+
+.pink:hover {
+    filter: drop-shadow(0 0 0.5em #ff0095);
+}
