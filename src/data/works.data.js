@@ -18,7 +18,7 @@ export default [
     title: 'Welbex',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo veniam est animi accusantium?',
     gitUrl: 'https://github.com/R071N/Welbex',
-    demoUrl: 'https://example.com/project-three',
+    demoUrl: 'https://r071n.github.io/Welbex/',
   },
   {
     image: '/img/works4.webp',

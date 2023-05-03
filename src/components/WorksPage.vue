@@ -50,8 +50,6 @@ export default {
     background-color: rgba(0, 0, 0, 0.6);
     border: #000000;
     border-radius: 3%;
-
-
     cursor: pointer;
 
     img {
