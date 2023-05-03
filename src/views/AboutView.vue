@@ -1,16 +1,11 @@
 <template>
-    <main class="main">
-      <section class="home container">
-        <HomePage />
-      </section>
-    </main>
-  </template>
-  
-  <script>
-  import HomePage from '@/components/HomePage.vue';
-  export default {
-    name: 'AboutView',
-    components: { HomePage },
-  }
-  </script>
-  
+  <AboutPage />
+</template>
+
+<script>
+import AboutPage from '@/components/AboutPage.vue';
+export default {
+  name: 'AboutView',
+  components: { AboutPage },
+}
+</script>
