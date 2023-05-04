@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: '/portfolio-vue/',
+  base: '/portfolio/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
