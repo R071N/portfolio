@@ -1,6 +1,6 @@
 # PortfoliO
 
-##About
+## About
 Это мое портфолио
 
 ## Project Setup
