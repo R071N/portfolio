@@ -2,8 +2,8 @@
   <main class="main">
     <section class="works container">
       <div class="works__block" v-for="project in works" :key="project.title">
-        <div>
-          <img class="works__block__image" :src="project.image" :alt="project.title" @click="goToDemo(project.demoUrl)">
+        <div class="works__block__image">
+          <img :src="project.image" :alt="project.title" @click="goToDemo(project.demoUrl)">
         </div>
         <div class="works__block__bottom">
           <div>
@@ -18,7 +18,7 @@
                   fill="#fff" />
               </svg>
             </a>
-            <a class="btn__link" :href="project.demoUrl" target="_blank">Demo</a>
+            <a class="btn__link" :href="project.demoUrl" target="_blank">DEMO</a>
           </div>
         </div>
       </div>
@@ -43,67 +43,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.works {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: grid;
-  gap: 50px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  justify-content: space-between;
-
-  &__block {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: #000000;
-    border-radius: 3%;
-
-    &__img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
-      cursor: pointer;
-    }
-
-    &__subtitle {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    &__desc {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-    &__bottom {
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
-
-  &__link {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.btn__link {
-  padding: 10px 20px;
-  border-radius: 10px;
-  align-self: center;
-  color: #fff;
-  background-color: #2196f3;
-}
-</style>

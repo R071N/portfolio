@@ -1,0 +1,33 @@
+.about {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+    &__block1 {
+        grid-row: span 3;
+    }
+
+    &__text {
+        padding: 20px;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: #000000;
+        border-radius: 3%;
+    }
+
+    &__block {
+        &__education {
+            padding: 20px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: #000000;
+            border-radius: 3%;
+        }
+
+        &__education div {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+@media(max-width:1280px) {
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:1024px) {
+    .nav {
+        grid-template-columns: 30% auto;
+    }
+
+    .home {
+        grid-template-columns: auto;
+        justify-content: inherit;
+    }
+
+    .works {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills__logo {
+        &7 {
+            top: 24%;
+            right: 37%;
+        }
+
+        &1 {
+            top: 20%;
+            left: 23%;
+        }
+
+        &2 {
+            top: 51%;
+            left: 72%;
+        }
+
+        &9 {
+            bottom: 25%;
+            left: 10%;
+        }
+
+        &6 {
+            left: 24%;
+        }
+
+        &5 {
+            top: 69%;
+            right: 36%;
+        }
+
+        &8 {
+            top: 31%;
+            right: 12%;
+        }
+
+        &10 {
+            bottom: 24%;
+            right: 12%;
+        }
+    }
+}
+
+@media(max-width:680px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #app {
+        grid-template-rows: 100px 1fr 130px;
+    }
+
+    .about {
+        grid-template-columns: auto;
+    }
+
+    .footer__list {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 15px;
+    }
+}
+
+@media(max-width:573px) {
+    #app {
+        grid-template-rows: 150px 1fr 130px;
+    }
+
+    .block {
+        &__left {
+            display: grid;
+            grid-template-columns: 293px 35px;
+            justify-self: center;
+        }
+
+        &__right {
+            justify-self: center;
+        }
+        
+        &__link {
+            justify-self: center;
+
+        }
+    }
+
+    .iphoto {
+        width: 300px;
+        height: 400px;
+    }
+    .title {
+        font-size: 34px;
+
+        &__text {
+            margin-top: 14px;
+            font-size: 24px;
+        }
+
+        &__desc {
+            font-size: 26px;
+        }
+    }
+
+    .nav {
+        grid-template-columns: auto;
+        gap: 10px;
+
+        &__logo {
+            text-align: center;
+        }
+    }
+
+    .about {
+        grid-template-columns: auto;
+    }
+
+    .skills__logo {
+        &1 {
+            top: 20%;
+            left: 6%;
+        }
+
+        &6 {
+            left: 8%;
+        }
+
+        &0 {
+            left: 34%;
+        }
+
+        &9 {
+            left: 3%;
+        }
+    }
+}
