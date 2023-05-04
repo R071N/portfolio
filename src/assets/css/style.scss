@@ -25,7 +25,7 @@ img {
 
 body {
     font-family: 'BlenderPro', 'Shanghai', sans-serif;
-    background: url(./img/back.webp) no-repeat;
+    background: url(../img/back.webp) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -169,7 +169,7 @@ body {
 }
 
 .iphoto {
-    background: url(./img/i.webp);
+    background: url(../img/i.webp);
     width: 400px;
     height: 600px;
     opacity: 0;
