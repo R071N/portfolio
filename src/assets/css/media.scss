@@ -85,7 +85,7 @@
 
 @media(max-width:573px) {
     #app {
-        grid-template-rows: 150px 1fr 130px;
+        grid-template-rows: 150px 1fr 200px;
     }
 
     .block {
@@ -98,7 +98,7 @@
         &__right {
             justify-self: center;
         }
-        
+
         &__link {
             justify-self: center;
 
@@ -109,6 +109,7 @@
         width: 300px;
         height: 400px;
     }
+
     .title {
         font-size: 34px;
 
@@ -128,6 +129,10 @@
 
         &__logo {
             text-align: center;
+        }
+
+        &__item {
+            font-size: 24px;
         }
     }
 
@@ -152,5 +157,86 @@
         &9 {
             left: 3%;
         }
+
+        &5 {
+            top: 66%;
+            right: 22%;
+        }
+
+        &10 {
+            right: 0%;
+        }
+
+        &2 {
+            top: 49%;
+            left: 64%;
+        }
+    }
+
+    .footer__list {
+        grid-template-columns: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:420px) {
+    .nav {
+        gap: 15px;
+
+        &__item {
+            font-size: 20px;
+        }
+    }
+
+    .iphoto {
+        width: 270px;
+        height: 300px;
+    }
+
+    .block__link svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .title {
+        font-size: 24px;
+
+        &__text {
+            margin-top: 8px;
+            font-size: 22px;
+        }
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .block__left {
+        grid-template-columns: 207px 26px;
+    }
+
+    .skills__logo__img1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills__logo__img2 {
+        width: 75px;
+        height: 75px;
+    }
+
+    .skills__logo__img3 {
+        width: 100px;
+        height: 66px;
+    }
+
+    .skills__logo4 {
+        top: 55%;
+        left: 27%;
+    }
+
+    .about__block__education,
+    .about__text {
+        font-size: 16px;
     }
 }

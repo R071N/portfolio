@@ -8,7 +8,7 @@
             Локация: Moscow
           </li>
           <li class="footer__item">
-            Телеграмм: <a href="https:t.me/r071nx">R071Nx</a>
+            Телеграмм: <a href="https://t.me/r071nx">R071Nx</a>
           </li>
           <li class="footer__item">
             Почта: <a href="mailto:drawpf@mail.ru">drawpf@mail.ru</a>
