@@ -20,7 +20,7 @@ export default {
 <style lang="scss">
 @import "@/assets/css/normalize.css";
 @import "@/assets/css/fonts.css";
-@import "@/assets/css/style.scss";
+@import "./assets/css/style.scss";
 @import "@/assets/css/about.scss";
 @import "@/assets/css/skills.scss";
 @import "@/assets/css/light.css";
