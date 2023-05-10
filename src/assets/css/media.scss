@@ -179,7 +179,7 @@
     }
 }
 
-@media (max-width:420px) {
+@media (max-width:425px) {
     .nav {
         gap: 15px;
 
@@ -215,24 +215,42 @@
         grid-template-columns: 207px 26px;
     }
 
-    .skills__logo__img1 {
-        width: 100px;
-        height: 100px;
-    }
+    .skills__logo {
+        &__img1 {
+            width: 100px;
+            height: 100px;
+        }
 
-    .skills__logo__img2 {
-        width: 75px;
-        height: 75px;
-    }
+        &__img2 {
+            width: 75px;
+            height: 75px;
+        }
 
-    .skills__logo__img3 {
-        width: 100px;
-        height: 66px;
-    }
+        &__img3 {
+            width: 120px;
+            height: 66px;
+        }
 
-    .skills__logo4 {
-        top: 55%;
-        left: 27%;
+        &4 {
+            top: 55%;
+            left: 27%;
+        }
+
+        &7 {
+            top: 27%;
+        }
+
+        &8 {
+            top: 35%;
+        }
+
+        &3 {
+            top: 19%;
+        }
+
+        &5 {
+            right: 29%;
+        }
     }
 
     .about__block__education,

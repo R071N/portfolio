@@ -17,7 +17,7 @@
               fill="#fff" />
           </svg>
         </a>
-        <a href="@/../assets/resum.pdf" download>
+        <a href="https://disk.yandex.ru/i/tpQJU_il_kXQSg" download>
           Скачать резюме
         </a>
       </div>
