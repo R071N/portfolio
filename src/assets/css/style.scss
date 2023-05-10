@@ -208,6 +208,15 @@ body {
         justify-content: space-around;
         list-style: none;
     }
+
+    &__item a {
+        display: flex;
+        justify-content: center;
+
+        & svg {
+            margin-right: 5px;
+        }
+    }
 }
 
 .fade-enter-active {
