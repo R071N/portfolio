@@ -1,7 +1,9 @@
 .skills {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 465px;
     height: 100%;
     background-color: black;
     z-index: 100;
@@ -36,7 +38,7 @@
         }
 
         &1 {
-            top: 26%;
+            top: 15%;
             left: 35%;
             animation: logo-opaciti 3s 0.9s ease forwards;
         }
@@ -48,19 +50,19 @@
         }
 
         &3 {
-            top: 16%;
+            top: 7%;
             left: 58%;
             animation: logo-opaciti 3s 1.3s ease forwards;
         }
 
         &4 {
-            top: 57%;
+            top: 66%;
             left: 38%;
             animation: logo-opaciti 3s 1.3s ease forwards;
         }
 
         &5 {
-            top: 64%;
+            top: 76%;
             right: 39%;
             animation: logo-opaciti 3s 1.5s ease forwards;
         }
@@ -90,7 +92,7 @@
         }
 
         &10 {
-            bottom: 27%;
+            bottom: 20%;
             right: 20%;
             animation: logo-opaciti 3s 2s ease forwards;
         }
