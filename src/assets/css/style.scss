@@ -23,6 +23,43 @@ img {
     background-color: transparent;
 }
 
+$blue-light: rgb(27, 104, 247);
+$blue: blue;
+$dark-blue: darkblue;
+
+@mixin states($hover-color, $focus-color, $active-color) {
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+        color: $hover-color;
+    }
+
+    &:focus {
+        color: $focus-color;
+    }
+
+    &:active {
+        color: $active-color;
+    }
+}
+
+@mixin states-with-scale($hover-color, $focus-color, $active-color, $t-scale) {
+    transition: fill 0.2s ease, transform 0.5s ease;
+
+    &:hover {
+        fill: $hover-color;
+        transform: $t-scale;
+    }
+
+    &:focus {
+        fill: $focus-color;
+    }
+
+    &:active {
+        fill: $active-color;
+    }
+}
+
 body {
     font-family: 'BlenderPro', 'Shanghai', sans-serif;
     background: url(../img/back.webp) no-repeat;
@@ -53,6 +90,8 @@ body {
 .logotype {
     font-family: 'Shanghai';
     font-size: 52px;
+
+    @include states($blue-light, $blue, $dark-blue);
 }
 
 .nav {
@@ -70,6 +109,8 @@ body {
 
     &__item {
         font-size: 28px;
+
+        @include states($blue-light, $blue, $dark-blue);
     }
 }
 
@@ -106,8 +147,7 @@ body {
         font-size: 36px;
         writing-mode: vertical-rl;
         transform: translateY(-100%);
-        animation: slide-in-top 0.5s ease-in-out forwards;
-        animation-delay: 0.3s;
+        animation: slide-in-top 0.5s 0.3s ease-in-out forwards;
     }
 
     &__desc {
@@ -115,8 +155,7 @@ body {
         font-size: 36px;
         text-align: end;
         transform: translateX(-100%);
-        animation: slide-in-right 0.5s ease-in-out forwards;
-        animation-delay: 0.6s;
+        animation: slide-in-right 0.5s 0.6s ease-in-out forwards;
     }
 }
 
@@ -133,36 +172,36 @@ body {
 }
 
 @keyframes slide-in-left {
-    from {
+    0% {
         opacity: 0;
         transform: translateX(-100%);
     }
 
-    to {
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
 @keyframes slide-in-top {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(-100%);
     }
 
-    to {
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes slide-in-right {
-    from {
+    0% {
         opacity: 0;
         transform: translateX(100%);
     }
 
-    to {
+    100% {
         opacity: 1;
         transform: translateX(0);
     }
@@ -178,20 +217,16 @@ body {
     background-size: cover;
     background-position: center;
     transform: translateY(-100%);
-    animation: image-in-top 0.5s ease-in-out forwards;
-    animation-delay: 0.3s;
+    animation: slide-in-top 0.5s 0.3s ease-in-out forwards;
 }
 
-@keyframes image-in-top {
-    from {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
+.hub__logo {
+    fill: #fff;
+    @include states-with-scale($blue-light, $blue, $dark-blue, scale(0.8))
+}
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.download-resum {
+    @include states(rgb(248, 4, 4), rgb(165, 165, 255), rgb(77, 1, 1))
 }
 
 //Footer
@@ -212,10 +247,14 @@ body {
     &__item a {
         display: flex;
         justify-content: center;
+        gap: 5px;
+        fill: #fff;
 
-        & svg {
+        &__svg {
             margin-right: 5px;
         }
+
+        @include states-with-scale($blue-light, $blue, $dark-blue, scale(1.1))
     }
 }
 
