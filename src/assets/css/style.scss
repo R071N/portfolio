@@ -133,6 +133,11 @@ body {
     justify-self: end;
 }
 
+.block__link {
+    display: flex;
+    align-items: end;
+}
+
 .title {
     margin: 0;
     opacity: 0;
@@ -222,11 +227,14 @@ body {
 
 .hub__logo {
     fill: #fff;
-    @include states-with-scale($blue-light, $blue, $dark-blue, scale(0.8))
+    @include states-with-scale($blue-light, $blue, $dark-blue, scale(0.8));
 }
 
 .download-resum {
-    @include states(rgb(248, 4, 4), rgb(165, 165, 255), rgb(77, 1, 1))
+    @include states(rgb(248, 4, 4), rgb(165, 165, 255), rgb(77, 1, 1));
+    display: flex;
+    font-family: 'Shanghai';
+    font-size: 18px;
 }
 
 //Footer
