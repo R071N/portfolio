@@ -17,7 +17,7 @@
               fill="inherit" />
           </svg>
         </a>
-        <a class="download-resum" href="https://disk.yandex.ru/i/tpQJU_il_kXQSg" target="_blank">
+        <a class="download-resum" href="https://disk.yandex.ru/i/_IeKVX7-b5BbNg" target="_blank">
           Скачать резюме
           <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title />
